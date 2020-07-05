@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+
+    <!--text view: label login-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_above="@+id/t1"
+        android:layout_alignStart="@+id/t1"
+        android:layout_alignLeft="@+id/t1"
+        android:layout_alignEnd="@+id/t1"
+        android:layout_alignRight="@+id/t1"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:text=" Login"
+        android:textColor="#000"
+        android:textSize="25sp">
+
+        <!--edit text: input email-->
+    </TextView>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailinp"
+        android:layout_marginBottom="48dp"
+        android:text="Please Enter Email and password to login">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/emailinp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+    <!--edit text: input password-->
+
+    <EditText
+        android:id="@+id/passinp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailinp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <!--button: register user-->
+    <Button
+        android:id="@+id/lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_below="@id/passinp"
+        style="@style/Base.Widget.AppCompat.Button.Colored">
+
+    </Button>
+
+    <!--text view: to recover password-->
+
+    <TextView
+        android:id="@+id/recoverpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lg"
+        android:layout_marginTop="24dp"
+        android:text="forgot password? Recover"
+        android:textAlignment="center"
+        android:textColor="#000">
+
+    </TextView>
+//sign in with google button
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/goob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recoverpass">
+
+    </com.google.android.gms.common.SignInButton>
+    <TextView
+        android:id="@+id/nothavacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lg"
+        android:layout_marginTop="163dp"
+        android:layout_marginBottom="30dp"
+        android:text="Don't have an account? Sign up"
+        android:textAlignment="center"
+        android:textColor="#000">
+
+    </TextView>
+
+
+</RelativeLayout>

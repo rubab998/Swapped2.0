@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".ChatActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_prof"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_chatimg"
+        app:civ_circle_background_color="@color/colorAccent"
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:id="@+id/rec_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center">
+
+     <!--reciever name-->
+
+
+        <TextView
+            android:id="@+id/recv_nam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reciever Name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+        <!--reciever status-->
+
+        <TextView
+            android:id="@+id/rec_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reciever status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+        <!--RecyclerView-->
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
